@@ -1,0 +1,564 @@
+:root{
+    /*background and font color*/
+    --background: #8f8f96;
+    --surface: #222222;
+    --on-background: #EAE6F2;
+    --on-surface: #DDDAE5;
+    --primary: #B5A1E5;
+    /*font sizes*/
+    --body-3: 1.6rem;
+    /*font family*/
+    --ff-nunito-sans: 'Nunito Sans', sans-serif;
+    /* Border Radius */
+    --radius-28: 28px;
+    --radius-16: 16px;
+    --radius-pill: 500px;
+    --radius-circle: 50%;
+    /* Shadow */
+    --shadow-1: 0px 0px 20px hsla(0, 2%, 19%, 0.5);
+    --shadow-2: 0px 0px 20px hsla(0, 5%, 20%, 0.4);
+    --outline: #3e3d40;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* overflow: hidden; */
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--background);
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    /* background-image: linear-gradient(to right top, #4d8d8c, #438180, #397574, #2f6968, #255e5d); */
+    /* background-image: url(images/backgroundforweb.jpg); */
+    color: var(--on-background);
+    font-size: var(--body-3);
+}
+html{
+    font-family: var(--ff-nunito-sans);
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+.justify-content{
+    justify-content: space-between;
+    align-items: center;
+}
+.justify-content1{
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+}
+.justify-content2{
+    justify-content: space-evenly;
+    align-items: center;
+    /* text-align: start; */
+}
+.justify-content3{
+    justify-content: start;
+    align-items: baseline;
+}
+.flex{
+    /* justify-content: space-between; */
+    line-height: 2;
+    gap: 10px;
+    display: flex;
+    /* text-align: baseline; */
+}
+/*left side*/
+#target{
+    /* display: block; */
+    color: #B5A1E5;
+    font-size: 10rem;
+    text-align: center;
+    /* margin-top: 3em; */
+    animation: 1s infinite animatin;
+
+}
+@keyframes animatin {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+#error-content{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 5em;
+    display: none;
+}
+
+.search input{
+    margin-top: 15px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background: var(--surface);
+    outline: 0;
+    width: 2500px;
+    height: 50px;
+}
+.search button i{
+    font-size: 20px;
+}
+.search button:hover{
+    background-color: #121212;
+    color: var(--primary);
+}
+input::selection{
+    color: var(--primary);
+}
+.containlocation:hover{
+    cursor: pointer;
+    color: palegoldenrod;
+}
+.current-location{
+    justify-content: center;
+    font-size: 18px;
+    color: #916aed;
+}
+.current-location i{
+    font-size: 20px;
+}
+.wheather-icon{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.upperleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--surface);
+    color: var(--on-surface);
+    font-family: var(--ff-nunito-sans);
+    font-size: inherit;
+    box-shadow: var(--shadow-1);
+    border-radius: var(--radius-16);
+    height: 45%;
+}
+.heading{
+    margin-left: 2rem;
+    font-family: var(--ff-nunito-sans);
+    color: inherit;
+}
+.Logo{
+    padding: 1.5rem;
+}
+.user-2-hidden{font-size: 30px; color: #B5A1E5;align-items: flex-end; padding-right: 2.5rem;display: none;}
+.user-2-hidden i{
+    position: relative;
+    left: 45%;
+}
+.user-2-hidden:hover{
+    scale: 0.9;
+    color: white;
+    background-color: #916aed;
+    /* border: 2px solid white; */
+}
+input{
+    display: block;
+}
+.search{
+    padding: 1.5rem;
+}
+input,button{
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    font: inherit;
+    font-family: var(--ff-nunito-sans);
+}
+sub{ vertical-align: baseline; }
+sup{ vertical-align: baseline; }
+.temp{
+    font-size: 2em;
+    font-weight: 400;
+}
+sub,sup{
+    font-size: 0.75em;
+}
+.color1{
+    margin-bottom: 10px;
+    background-color: var(--surface);
+    border-radius: var(--radius-28);
+    box-shadow: var(--shadow-2);
+}
+.color2{
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px #121212;
+    background-color: #2e2c2c;
+}
+.flex2{
+    display: flex;flex-direction: column;gap: 12px;
+}
+.vertical-align{
+    align-items: center;
+    justify-content: space-between;
+}
+.contain-main{
+    height: 97%;
+    width: 97%;
+}
+.contain-main-child{
+    height: 23%;
+    width: 100%;
+}
+.contain-item{
+    text-align: start;
+    height: 90%;
+    width: 100%;
+}
+.contain-item-child{
+    padding: 0px 0px 0px 40px;
+    width: 25%;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.main-heading{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.heading2{
+    text-decoration: underline;
+    margin-top: 2rem;
+    text-align: center;
+}
+.contain-hourly-data{
+    margin: 2rem 1rem;
+    padding: 15px;
+    width: 98%;
+    height: 370px;
+    overflow-x: scroll;
+}
+.contain-hourly-data-child{
+    width: 200px;
+    height: 100%;
+    padding: .5rem;
+    display: flex;flex-direction: column;gap: 12px;
+}
+@media (max-width:1200px){
+    .temp{
+        font-size: 2rem;
+    }
+    .contain-main h1{
+        font-size: 20px;
+    }
+    .contain-main h2{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1380px) {
+    .img-temp p{
+        display: none;
+    }
+}
+@media screen and (max-width:1200px){
+    .contain-hourly-data-child h2{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 991px){
+    .login{
+        display: none;
+    }
+    .temp{
+        font-size: 5rem;
+    }
+    .livedata{
+        padding-inline: 10rem;
+    }
+    .img-temp p{
+        display: block;
+    }
+}
+@media (max-width:991.5px){
+    .user-2-hidden{
+        display: block;
+    }
+}
+@media (max-width:768px){
+    .temp{
+        font-size: 5rem;
+    }
+    .containers img{
+        width: 30px;
+        height: 30px;
+    }
+    .contain-main h1{
+        font-size: 14px;
+    }
+    .contain-main h2{
+        font-size: 10px;
+    }
+    #searchbtn{
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+    }
+    .contain-hourly-data{
+        height: 300px;
+    }
+    .contain-hourly-data-child{
+        width: 170px;
+        height: 270px;
+        gap: 0px;
+    }
+    .contain-hourly-data-child h2{
+        font-size: 1.5rem;
+    }
+    .contain-hourly-data-child h5{
+        font-size: 1rem;
+    }
+}
+@media (max-width:570px){
+    .livedata{
+        padding-inline: 0rem;
+    }
+}
+@media (max-width:468px){
+    .temp{
+        font-size: 2em;
+    }
+    .contain-item-child{
+        padding: 0px 0px 0px 10px;
+        /* width: 25%; */
+    }
+    .logo{
+        width: 200px;
+        height: 40px;
+    }
+    .location-2-hidden{
+        font-size: 25px;
+    }
+    .search{
+        padding: 6px;
+    }
+    #target{
+        font-size: 5rem;
+    }
+    .Logo{
+        padding-bottom: 0px !important;
+    }
+    .search-item{
+        margin-left: 10px;
+        padding-top: 0px;
+    }
+    .user-2-hidden{font-size: 20px; color: #B5A1E5;align-items: flex-end; padding-right: 2.5rem;display: block;}
+    .user-2-hidden i{
+        position: relative;
+        left: 65%;
+    }
+}
+@media  (max-width:376px) {
+    .logo{
+        height: 30px;
+        width: 150px;
+    }
+    #icon{
+        width:70px;
+        height: 70px;
+    }
+}
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #999;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3.5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #916aed;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Adding hover effect to the search button */
+.search button {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+.search button:hover {
+    background-color: var(--primary); /* Changes background to primary color on hover */
+    color: var(--background); /* Changes text color to background color on hover */
+    cursor: pointer; /* Indicates it's clickable */
+}
+
+/* Adding hover effect to the current location text */
+.containlocation:hover {
+    cursor: pointer;
+    color: palegoldenrod; /* Existing hover color */
+    transform: scale(1.05); /* Slightly enlarges the text on hover */
+    transition: transform 0.2s ease; /* Smooth transition for the scaling effect */
+}
+
+/* Adding hover effect to the Logo image */
+.Logo img:hover {
+    transform: scale(1.05); /* Slightly enlarges the logo on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Adding hover effect to the 'Now' section (upperleft) */
+.upperleft {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.upperleft:hover {
+    box-shadow: 0px 0px 30px hsla(0, 2%, 19%, 0.7); /* More prominent shadow on hover */
+    transform: translateY(-5px); /* Slightly moves the section up on hover */
+}
+
+/* Adding hover effect to the daily forecast items in Multi-forcast */
+#Multi-forcast > div { /* Target the div wrapping each forecast item */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+#Multi-forcast > div:hover {
+    background-color: var(--outline); /* Changes background on hover */
+    transform: translateX(5px); /* Slightly moves the item to the right */
+}
+
+/* Adding hover effect to the "Today's Highlights" inner items (color2) */
+.contain-main-child .color2 {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.contain-main-child .color2:hover {
+    box-shadow: 0px 0px 20px #916aed; /* Adds a shadow with primary color */
+    transform: translateY(-3px); /* Slightly moves the item up */
+}
+
+/* Adding hover effect to the hourly forecast items */
+.contain-hourly-data-child {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.contain-hourly-data-child:hover {
+    transform: translateY(-5px); /* Moves the hourly forecast item up */
+    box-shadow: 0px 0px 15px var(--primary); /* Adds a shadow with primary color */
+}
+
+/* Hover effect for the login button that appears on smaller screens */
+.user-2-hidden {
+    transition: scale 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.user-2-hidden:hover {
+    scale: 0.95; /* Slightly smaller on hover */
+    color: white; /* Text color becomes white */
+    background-color: var(--primary); /* Background becomes primary color */
+    border: 2px solid white; /* Adds a white border */
+}
+
+/* Hover effect for the unit toggle slider */
+.switch .slider {
+    transition: background-color 0.4s;
+}
+
+.switch input:checked + .slider {
+    background-color: #916aed;
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.switch .slider:hover {
+    background-color: #7a5cd6; /* Darker shade on hover */
+}
+
+.switch input:checked + .slider:hover {
+    background-color: #7a5cd6; /* Darker shade even when checked */
+}
+
+/* Styles for the scrollable section with buttons */
+.scroll-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content and buttons */
+    margin: 2rem 1rem;
+    gap: 10px; /* Space between buttons and content */
+}
+
+.scroll-btn {
+    background-color: var(--primary);
+    color: var(--on-background);
+    border: none;
+    padding: 10px 15px;
+    border-radius: var(--radius-16);
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.scroll-btn:hover {
+    background-color: #7a5cd6; /* Darker primary on hover */
+    transform: scale(1.05);
+}
+
+.scroll-btn:active {
+    transform: scale(0.95);
+}
+
+/* Ensure the hourly display remains scrollable */
+.contain-hourly-data {
+    flex-grow: 1; /* Allows it to take up available space */
+    width: auto; /* Override fixed width if necessary */
+    margin: 0; /* Remove previous margins if they conflict */
+}
+
+@media (max-width: 768px) {
+    .scroll-container {
+        flex-direction: column; /* Stack buttons and content on smaller screens */
+    }
+    .scroll-btn {
+        width: 100%; /* Make buttons full width */
+        margin-bottom: 10px; /* Add space between stacked buttons */
+    }
+}
